@@ -9,11 +9,11 @@ jobs:
   artifact:
       runs-on: macos-latest
   steps:
-      - name: check out code
-        uses: actions/checkout@v1
+    - name: check out code
+      uses: actions/checkout@v1
 
-      - name: upload artifact
-        uses: actions/upload-artifact@v1.0.0
-        with:
+    - name: upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
           name: ${{env.ENVIROMENT_VAR}}
           path: .
