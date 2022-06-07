@@ -21,5 +21,7 @@ jobs:
         steps:
         - run: date
     job4:
-        name: Fourth job
         needs: [job1, job2, job3]
+        runs-on: macos-latest
+        steps:
+        - run: date
