@@ -6,9 +6,9 @@ env:
   ENVIROMENT_VAR: 'This is the enviroment variable'
 
 jobs:
-  name: artifact check and up
-  runs-on: macos-latest
-  steps:
+  artifact: 
+    runs-on: macos-latest
+    steps:
       - name: check out code
         uses: actions/checkout@v1
 
